@@ -21,11 +21,9 @@ extensions
 Composer
 ########
 
-Simple add a dependency on
-``pixidos/gpwebpay-core`` to your project's
-``composer.json`` file if you use `Composer <https://getcomposer.org/>`_ to manage the
-dependencies of your project:
+| Simple add a dependency on``pixidos/gpwebpay-core`` to your project's ``composer.json`` file.
+| If you use `Composer <https://getcomposer.org/>`_ to manage the dependencies of your project:
 
-.. parsed-literal::
+.. code-block:: bash
 
-    composer require --dev pixidos/gpwebpay-core ~\ |version|
+    composer require pixidos/gpwebpay-core

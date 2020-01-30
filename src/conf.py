@@ -13,6 +13,7 @@
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
 import os
+import sys
 from subprocess import Popen, PIPE
 
 from pygments.lexers.web import PhpLexer
@@ -20,7 +21,7 @@ from pygments.lexers.web import PhpLexer
 from sphinx.highlighting import lexers
 
 
-# sys.path.insert(0, os.path.abspath('.'))
+sys.path.insert(0, os.path.abspath('.'))
 
 def get_version():
     if os.environ.get('READTHEDOCS') == 'True':
@@ -91,7 +92,7 @@ language = None
 exclude_patterns = [u'Thumbs.db', '.DS_Store']
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = None
+pygments_style = 'default'
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -105,16 +106,21 @@ html_title = "GPWebPay-Core %s Manual" % get_version()
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
+
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+if not on_rtd:
+    import sphinx_rtd_theme
+    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+
 html_theme_options = {
-    'canonical_url': '',
     'analytics_id': 'UA-XXXXXXX-1',  # Provided by Google in your dashboard
     'logo_only': False,
     'display_version': True,
     'prev_next_buttons_location': 'bottom',
     'style_external_links': False,
-    'style_nav_header_background': 'white',
+    #'style_nav_header_background': 'red',
     # Toc options
-    'collapse_navigation': True,
+    'collapse_navigation': False,
     'sticky_navigation': True,
     'navigation_depth': 4,
     'includehidden': True,
@@ -223,3 +229,8 @@ numfig_format = {
     'table': 'Table %s',
     'section': 'Section'
 }
+
+
+def setup(app):
+    app.add_stylesheet('css/custom.css')
+    app.add_stylesheet('css/highlight.css')

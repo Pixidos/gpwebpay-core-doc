@@ -76,7 +76,7 @@ ResultText
 A text description of the error identified by a combination of PRCODE and SRCODE.
 The contents are coded using the Windows Central European (Code Page 1250).
 
-:return: string
+:return: ``string``
 
 .. code-block:: php
 
@@ -89,7 +89,7 @@ PrCode
 
 Primary code. For details, see “List of return codes in GPWebPay doc”.
 
-Return: int
+:return: ``int``
 
 .. code-block:: php
 
@@ -103,7 +103,7 @@ SrCode
 
 Secondary code. For details, see “List of return codes in GPWebPay doc”.
 
-:return: int
+:return: ``int``
 
 .. code-block:: php
 
@@ -117,7 +117,7 @@ OrderNumber
 
 Contents of the field from the request.
 
-:return: string
+:return: ``string``
 
 .. code-block:: php
 
@@ -131,7 +131,7 @@ MerOrderNumber
 
 Contents of the field from the request, if included.
 
-:return: string | null
+:return: ``string`` | ``null``
 
 .. code-block:: php
 
@@ -145,14 +145,13 @@ UserParam1
 
 Hash numbers of the payment card. Hash is a unique value for each and every card and merchant – that is if the payment is made by the same card at the same merchant, the resulting hash is identical, if the same card is used at another merchant, there is another hash.
 
-Onlyote:: only if the merchant has this functionality enabled
+:return: ``string`` | ``null``
 
-:return: string | null
+.. note:: Only if the merchant has this functionality enabled
 
 .. code-block:: php
 
 	$response->getUserParam1();
-
 
 .. _response.params.md:
 
@@ -163,9 +162,9 @@ Hash numbers of the payment card. Hash is a unique value for each and every card
 
 .. note:: GPWebPay core use this field to store information about used gateway.
 
-	So method `$response->getParam(string $paramName)` return value contain gateway info.
+	So method ``$response->getParam(string $paramName)`` return value contain gateway info.
 
-Stringn: string | null
+:return: ``string`` | ``null``
 
 .. code-block:: php
 
@@ -181,7 +180,7 @@ Digest and Digest1
 
 *Digest1* is same as *Digest* but (without the DIGEST field) and on the top of that also the MERCHANTNUMBER field (the field is not sent, the merchant has to know it, the field is added to the end of the string).
 
-Stringn: string
+:return: ``string``
 
 .. code-block:: php
 

@@ -1,0 +1,20 @@
+.wy-nav-content {
+    max-width: 1200px;
+}
+
+
+/*.rst-content dl:not(.docutils) {*/
+/*    display: table;*/
+/*}*/
+
+/*.rst-content dl:not(.docutils) dt {*/
+/*    display: table-cell;*/
+/*    font-size: 100%;*/
+/*    background: none;*/
+/*    color: #000000;*/
+/*    border-top: none;*/
+/*}*/
+
+/*.rst-content dl dd {*/
+/*    display: table-cell;*/
+/*}*/

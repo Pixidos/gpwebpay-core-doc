@@ -17,33 +17,33 @@ Attributes
 
 The `privateKey` attribute
 --------------------------
-Possible values: absolute path to your private certificate `pem` file.
+:Possible values: absolute path to your private certificate `pem` file.
 
-Type: `string`
+:Type: ``string``
 
 .. _configuration.attributes.privateKeyPassphrase:
 
 The `privateKeyPassphrase` attribute
 ------------------------------------
-Possible values: passphrase of your private certificate
+:Possible values: passphrase of your private certificate
 
-Type: `string`
+:Type: ``string``
 
 .. _configuration.attributes.publicKey:
 
 The `publicKey` attribute
 -------------------------
-Possible values: absolute path to GPWebPay service public certificate `pem` file.
+:Possible values: absolute path to GPWebPay service public certificate ``pem`` file.
 
-Type: `string`
+:Type: ``string``
 
 .. _configuration.attributes.url:
 
 The `url` attribute
 -------------------
-Possible values: absolute URL to gateway
+:Possible values: absolute URL to gateway
 
-Type: `string`
+:Type: ``string``
 
 The address you are get from GPWebPay
 
@@ -51,20 +51,21 @@ The address you are get from GPWebPay
 
 The `depositFlag` attribute
 ---------------------------
-Possible values: `0` or `1`
+:Possible values: ``0`` or ``1``
 
-Type: `int`
+:Type: ``int``
 
-Specifies if the order has to be paid for automatically.
-`0` = instant payment not required `1` = payment required
+| Specifies if the order has to be paid for automatically.
+| ``0`` = instant payment not required
+| ``1`` = payment required
 
 .. _configuration.attributes.merchantNumber:
 
 The `merchantNumber` attribute
 ------------------------------
-Possible values: your Merchant Number
+:Possible values: your Merchant Number
 
-Type: `string`
+:Type: ``string``
 
 Your Merchant number you are get from GPWebPay service.
 
@@ -72,13 +73,14 @@ Your Merchant number you are get from GPWebPay service.
 
 The `responseUrl` attribute
 ---------------------------
-Possible values: absolute URL to your site where GPWebPay sends a response
+:Possible values: absolute URL to your site where GPWebPay sends a response
 
-Type: `string`
+:Type: ``string``
 
 It is optional in config. You can set up url for each request in Operation object.
-By GPWebPay is recommendation does not use url which has parameters (after '?')
-because they may drop it for *"security reason"*.
+
+.. warning:: GPWebPay is recommendation does not use url which has parameters (after '?')
+	because they may drop it for *"security reason"*.
 
 .. _configuration.example:
 

@@ -4,7 +4,7 @@
 Operation and Request
 =====================
 
-For creating request to GPWebPay API you are need create two objects. `Operation` and `Request`
+For creating request to GPWebPay API you are need create two objects. ``Operation`` and ``Request``
 
 .. _request.operation:
 
@@ -50,7 +50,7 @@ And render the payment button
 
 	echo sprintf('<a href="%s">This is pay link</a>', $request->getRequestUrl());
 
-or you can render `form` for `post` method
+or you can render ``form`` for ``post`` method
 
 .. code-block:: php
 
@@ -77,7 +77,7 @@ OrderNumber
 
 Ordinal number of the order. Every request from a merchant has to contain a unique order number.
 
-:Important: Is not your order number! For specify you order number use :ref:`request.params.merOrderNum` parameter
+.. warning:: Is not your order number! For specify you order number use :ref:`request.params.merOrderNum` parameter
 
 You are have two ways how specify this.
 
@@ -98,7 +98,7 @@ You are have two ways how specify this.
 
 .. code-block:: php
 
-	// The conversion will make `Amount` self
+	// The conversion will make Amount self
 	$amount = new Amount(1000.00);
 	// or create the conversion by yourself
 	$amount = new Amount(100000, false);
