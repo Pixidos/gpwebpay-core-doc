@@ -2,6 +2,9 @@
     max-width: 1200px;
 }
 
+table.docutils th, .rst-content table.field-list th{
+    padding: 0 16px;
+}
 
 /*.rst-content dl:not(.docutils) {*/
 /*    display: table;*/

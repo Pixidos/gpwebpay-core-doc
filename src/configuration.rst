@@ -17,7 +17,8 @@ Attributes
 
 The `privateKey` attribute
 --------------------------
-:Possible values: absolute path to your private certificate `pem` file.
+
+Absolute path to your private certificate `pem` file.
 
 :Type: ``string``
 
@@ -25,7 +26,8 @@ The `privateKey` attribute
 
 The `privateKeyPassphrase` attribute
 ------------------------------------
-:Possible values: passphrase of your private certificate
+
+Passphrase of your private certificate
 
 :Type: ``string``
 
@@ -33,7 +35,8 @@ The `privateKeyPassphrase` attribute
 
 The `publicKey` attribute
 -------------------------
-:Possible values: absolute path to GPWebPay service public certificate ``pem`` file.
+
+Absolute path to GPWebPay service public certificate ``pem`` file.
 
 :Type: ``string``
 
@@ -41,39 +44,45 @@ The `publicKey` attribute
 
 The `url` attribute
 -------------------
-:Possible values: absolute URL to gateway
+
+Absolute URL to gateway
 
 :Type: ``string``
 
-The address you are get from GPWebPay
+.. note::
+	You are get from GPWebPay service
 
 .. _configuration.attributes.depositFlag:
 
 The `depositFlag` attribute
 ---------------------------
-:Possible values: ``0`` or ``1``
-
-:Type: ``int``
 
 | Specifies if the order has to be paid for automatically.
 | ``0`` = instant payment not required
 | ``1`` = payment required
 
+:Type: ``int``
+
+
+
 .. _configuration.attributes.merchantNumber:
 
 The `merchantNumber` attribute
 ------------------------------
-:Possible values: your Merchant Number
+
+Your Merchant Number
 
 :Type: ``string``
 
-Your Merchant number you are get from GPWebPay service.
+.. note::
+	You are get from GPWebPay service.
 
 .. _configuration.attributes.responseUrl:
 
 The `responseUrl` attribute
 ---------------------------
-:Possible values: absolute URL to your site where GPWebPay sends a response
+
+Absolute URL to your site where GPWebPay sends a response
 
 :Type: ``string``
 

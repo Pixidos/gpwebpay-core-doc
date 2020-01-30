@@ -17,6 +17,7 @@ and :ref:`request.params.currency` objects with values of your payment order.
 .. code-block:: php
 
 	use Pixidos\GPWebPay\Data\Operation;
+
 	$operation = new Operation(
 		$orderNumber,
 		$amount,
@@ -113,7 +114,7 @@ Currency
 Currency identifier according to ISO 4217 (see Addendum ISO 4217).
 
 You are simple create this, because in class
-`Pixidos\GPWebPay\Enum\Currency` you are have all constants with ISO code
+``Pixidos\GPWebPay\Enum\Currency`` you are have all constants with ISO code
 and methods for create the enum.
 
 .. code-block:: php
@@ -121,7 +122,6 @@ and methods for create the enum.
 	use Pixidos\GPWebPay\Enum\Currency as CurrencyEnum;
 
 	$currency = new Currency(CurrencyEnum::CZK())
-
 
 
 .. _request.params.merOrderNum:
@@ -131,13 +131,9 @@ MerOrderNum
 
 Order identification for the merchant. If not specified, the :ref:`request.params.order_number` value is used
 
-You are simple create this, because in class
-`Pixidos\GPWebPay\Enum\Currency` you are have all constants with ISO code
-and methods for create the enum.
-
 .. code-block:: php
 
-	use Pixidos\GPWebPay\Enum\Currency as CurrencyEnum;
+	use Pixidos\GPWebPay\Param\MerOrderNum;
 
-	$currency = new Currency(CurrencyEnum::CZK())
+	$merOrderNum = new MerOrderNum(123455);
 

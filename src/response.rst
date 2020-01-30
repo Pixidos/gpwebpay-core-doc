@@ -35,7 +35,7 @@ Now you are have two options.
 	// here is you code for processing response
 
 
-**Or use :ref:`service.response_provider` and callbacks**
+**Or use ResponseProvider and callbacks**
 
 .. code-block:: php
 
