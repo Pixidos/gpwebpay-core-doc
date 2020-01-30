@@ -108,7 +108,7 @@ You are have two ways how specify this.
 .. _request.params.currency:
 
 Currency
------------
+--------
 
 Currency identifier according to ISO 4217 (see Addendum ISO 4217).
 

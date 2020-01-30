@@ -46,12 +46,12 @@ Service for creating `Response` from received params
 
 
 
-.. _service.request_provider:
+.. _service.response_provider:
 
-RequestProvider
----------------
+ResponseProvider
+----------------
 
-Is service what validate and can processed `Request`
+Is service what validate and can processed `Response`
 
 .. code-block:: php
 

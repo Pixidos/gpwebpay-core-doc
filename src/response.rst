@@ -113,7 +113,7 @@ Secondary code. For details, see “List of return codes in GPWebPay doc”.
 .. _response.params.ordernumber:
 
 OrderNumber
-----------
+-----------
 
 Contents of the field from the request.
 
